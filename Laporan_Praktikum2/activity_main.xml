@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Judul -->
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIKET BIOSKOP TERBAIK!"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Pesan tiket sekarang sebelum kehabisan!"
+            android:textAlignment="center"
+            android:textColor="#777" />
+
+        <!-- Nama -->
+        <TextView
+            android:text="Nama *"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etNama"
+            android:hint="Masukkan nama"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Kursi -->
+        <TextView
+            android:text="Nomor Kursi *"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etKursi"
+            android:hint="1 - 100"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Kelas -->
+        <TextView
+            android:text="Pilih Kelas"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/rgKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reguler"/>
+
+            <RadioButton
+                android:id="@+id/rbPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium"/>
+
+            <RadioButton
+                android:id="@+id/rbVIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP"/>
+        </RadioGroup>
+
+        <!-- Harga -->
+        <TextView
+            android:id="@+id/tvHarga"
+            android:text="Harga: Rp 0"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Snack -->
+        <TextView
+            android:text="Snack"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cbPopcorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popcorn"/>
+
+        <CheckBox
+            android:id="@+id/cbMinuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minuman"/>
+
+        <CheckBox
+            android:id="@+id/cbNachos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nachos"/>
+
+        <CheckBox
+            android:id="@+id/cbCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Combo"/>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btnPesan"
+            android:text="Pesan Tiket"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
